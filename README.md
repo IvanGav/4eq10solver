@@ -5,17 +5,27 @@ This is a small command line tool for solving (a slightly generalized version of
 Given 4 digits, operators +, -, * and / and one set of parentheses, make the equation to equal 10.
 
 Command Line Arguments:
-- -n - specify Number of numbers to read and use; default = 4
-- -f - what number to Find; default = 10.0
-- -o - what Operators are allowed; default = +-*/
+- -n \<int> - specify Number of numbers to read and use; default = 4
+- -f \<float> - what number to Find; default = 10.0
+- -o \<string> - what Operators are allowed; default = +-*/
   - use any string of +-\*/, representing corresponding allowed operators (e.g. '+', '+\*', '+-/')
+- -a - give All solutions; by default gives a single solution
 - -h - display a Helpful usage guide
 
 Example usage:
-- `./solver -n 3 -f 5 -o +-*`
+- `./solver -a -n 3 -f 5 -o +-*`
 - (enter) `1`
 - (enter) `2`
 - (enter) `3`
+- (enter)
+
+Example usage:
+- `./solver`
+- (enter) `1`
+- (enter) `2`
+- (enter) `3`
+- (enter) `5`
+- (enter)
 
 # How to run it
 
